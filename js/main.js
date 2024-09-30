@@ -351,23 +351,3 @@ jQuery(document).ready(function($) {
   siteIstotope();
 
 });
-
-
-// Mostrar el botón cuando el usuario ha hecho scroll hacia abajo
-window.onscroll = function() {
-	var btn = document.getElementById("backToTopBtn");
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	  btn.style.display = "block";
-	} else {
-	  btn.style.display = "none";
-	}
-  };
-  
-  // Volver arriba cuando se hace clic en el botón
-  document.getElementById("backToTopBtn").onclick = function() {
-	window.scrollTo({
-	  top: 0,
-	  behavior: "smooth" // Desplazamiento suave
-	});
-  };
-  
