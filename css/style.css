@@ -286,7 +286,7 @@ body {
   font-weight: 300;
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
-  
+
 }
 
 ::-moz-selection {
@@ -2790,5 +2790,33 @@ footer .cm-link:hover {
   .carousel-item {
     max-width: 330px;
   }
+
+  .text-ans {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 90%;
+    margin-left: 15px;
+  }
+
+/* Asegurarse de que el carrusel esté centrado en pantallas pequeñas */
+@media (max-width: 768px) {
+  #carouselExample {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%; /* Asegura que el carrusel se ajuste bien al ancho de la pantalla */
+  }
+
+  .carousel-inner {
+    text-align: center;
+  }
+
+  .carousel-item img {
+    margin: 0 auto; /* Centra las imágenes dentro del carrusel */
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de las imágenes */
+  }
+}
 
 }
